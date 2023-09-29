@@ -1,7 +1,7 @@
 from Vehicle import vehicle
 
 
-# option
+# option เพิ่มข้อมูล
 def display_option():
     print("Welcome to Vehicle Data Store System (VDSS)")
     print("\n-------------------------------")
@@ -30,7 +30,7 @@ def display_option():
         print("Pleaes, select number 1-5")
 
 
-# Add Data
+# Add Data เพิ่มข้อมูล
 def input_vehicle_data():
     brand = input("Enter vehicle brand: ")
     model = input("Enter vehicle model: ")
@@ -59,7 +59,7 @@ def display_vehicle():
         print("\n")
 
 
-# delete vehicle
+# delete vehicle ลบ
 def delete_vehicle():
     display_vehicle() # display all data in list
     if len(vehicle.my_vehicle) != 0:
@@ -71,7 +71,7 @@ def delete_vehicle():
         print("-------------------------------\n")
 
 
-# edit vehicle price
+# edit vehicle price แก้ไข
 def edit_vehicle_price():
     display_vehicle()
     if len(vehicle.my_vehicle) != 0:
